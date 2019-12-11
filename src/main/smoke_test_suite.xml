@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Smoke Test Suite" parallel="classes" thread-count="2">  
+  <test name="FirstTest">
+  <parameter name="browser" value="LOCAL_CHROME"/>
+  <parameter name="gridHubURL" value=""/>
+    <classes>
+      <class name="com.epam.rp.demo.sample_testng.SearchCountriesOneByOne"/>      
+    </classes>
+  </test> <!-- Test -->
+  <test name="SecondTest">
+  <parameter name="browser" value="LOCAL_CHROME"/>
+  <parameter name="gridHubURL" value=""/>
+    <classes>
+      <class name="com.epam.rp.demo.sample_testng.SearchCountriesTogether"/>      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
